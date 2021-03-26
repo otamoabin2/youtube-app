@@ -7,6 +7,8 @@ import youtube from '../supports/youtube'
 
 class Body extends Component {
   state = {
+    tags: [],
+    title: ''
 
   }
 
@@ -17,7 +19,8 @@ class Body extends Component {
       }
     })
     this.setState({
-      everything: response.data.items
+      everything: response.data.items,
+      tags: response.data.items[0].snippet.tags,
     })
   }
 
@@ -25,7 +28,7 @@ class Body extends Component {
     return (
       <div className="w-full container mx-auto my-12">
         <Form handleFormSubmit={this.handleSubmit} />
-        <Results />
+        <Results tags={this.state.tags} />
       </div>
     )
   }
