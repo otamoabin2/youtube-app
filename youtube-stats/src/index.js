@@ -8,9 +8,3 @@ ReactDOM.render(
   <App />,
   document.getElementById('root')
 );
-
-const root = document.querySelector('h3').textContent;
-
-root
-
-
