@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Tags from '../components/dataset/Tags';
+import Info from '../components/dataset/Info'
 
 class Results extends Component {
   render() {
@@ -9,6 +10,7 @@ class Results extends Component {
           <div class="px-2">
             <div class="flex -mx-2">
               <Tags tags={this.props.tags} />
+              <Info title={this.props.title} channelTitle={this.props.channelTitle} views={this.props.views} />
             </div>
           </div>
         </div>
