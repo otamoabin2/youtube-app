@@ -11,6 +11,7 @@ class Body extends Component {
     title: '',
     channelTitle: '',
     views: '',
+    comments: ''
 
   }
 
@@ -23,7 +24,10 @@ class Body extends Component {
     this.setState({
       everything: response.data.items,
       tags: response.data.items[0].snippet.tags,
-      title: response.data.items[0].snippet.title
+      title: response.data.items[0].snippet.title,
+      channelTitle: response.data.items[0].snippet.channelTitle,
+      views: response.data.items[0].statistics.views,
+      comments: response.data.items[0].statistics.commentCount
     })
   }
 
