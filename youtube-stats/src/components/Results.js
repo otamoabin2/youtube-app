@@ -10,7 +10,7 @@ class Results extends Component {
           <div class="px-2">
             <div class="flex -mx-2">
               <Tags tags={this.props.tags} />
-              <Info title={this.props.title} channelTitle={this.props.channelTitle} views={this.props.views} />
+              <Info title={this.props.title} channelTitle={this.props.channelTitle} views={this.props.views} comments={this.props.comments} />
             </div>
           </div>
         </div>

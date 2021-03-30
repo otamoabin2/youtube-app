@@ -9,6 +9,7 @@ function Info(props) {
         <div><strong>Channel Title: </strong><span className="text-gray-700 text-base">{props.channelTitle}</span></div>
         <div><strong>Video Title: </strong><span className="text-gray-700 text-base">{props.title}</span></div>
         <div><strong>Views: </strong><span className="text-gray-700 text-base">{props.views}</span></div>
+        <div><strong>CommentCount: </strong><span className="text-gray-700 text-base">{props.comments}</span></div>
       </div>
     </div>
   )
